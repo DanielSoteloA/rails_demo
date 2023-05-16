@@ -44,10 +44,14 @@ app/views/welcome/index.html.erb</p>
 
 <div class="card" style="width: 18rem;">
   <!--<img class="card-img-top" src="../app/assets/images/descarga.svg" alt="Card image cap">-->
-  <%= image_tag "descarga.svg", class: "card-img-top", height: 300 %>
+  <%= image_tag "descarga.svg", class: "card-img-top", alt:"alt", height: 300 %>
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
+
+<h2>Time.now</h2>
+<p><%=Time.now()%></p>
+<p><%=time_ago_in_words(Time.now - 2.hours)%></p>
